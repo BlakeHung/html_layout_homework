@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: Liberation serif;
+    }
+    .container {
+        width: 640px;
+        margin: 0 auto;
+    }
+    .content {
+        display: flex;
+        justify-content: space-between;
+    }
+    .news-list {
+        margin: 0;
+        padding: 0;
+    }
+    .news-item {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 24px;
+    }
+    .news-item p {
+        margin: 0 20px
+    }
+    .copyright {
+        font-style: 16px;
+        line-height: 1.5;
+        padding: calc((120px - 16px * 1.5)/2);
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="content">
+            <ul class="news-list">
+                <li class="news-item">
+                    <img src="http://via.placeholder.com/96" alt="">
+                    <div>
+                        <p class="news-title">Lorem ipsum dolor sit.</p>
+                        <p class="news-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate, expedita eaque!</p>
+                    </div>
+                </li>
+                <li class="news-item">
+                    <img src="http://via.placeholder.com/96" alt="">
+                    <div>
+                        <p class="news-title">Lorem ipsum dolor sit.</p>
+                        <p class="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, amet dolor.</p>
+                    </div>
+                </li>
+            </ul>
+            <div class="aside"><img src="http://via.placeholder.com/216" alt=""></div>
+        </div>
+        <p class="copyright">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium, fugit?</p>
+    </div>
+</body>
+</html>
