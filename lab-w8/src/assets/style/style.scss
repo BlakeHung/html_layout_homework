@@ -46,17 +46,38 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+@import "../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+@import "../../../node_modules/@fortawesome/fontawesome-free/scss/brands";
+@import "../../../node_modules/@fortawesome/fontawesome-free/scss/regular";
+@import "../../../node_modules/@fortawesome/fontawesome-free/scss/solid";
+@import "../../../node_modules/@fortawesome/fontawesome-free/scss/v4-shims";
+
+@import "functions";
+@import "variables";
+@import "mixins";
+@import "utilities";
+@import "forms";
+
+@import "containers";
+@import "grid";
+@import "utilities/api";
+
+@import "button-group";
+@import "buttons";
 
 $primary : #707070;
 $second : #907A7B;
 
+body {
+  font-family: 'Noto Sans TC';
+}
 .h1{
   padding: 15px -10px;
 }
 
 .header {
   width: 100%;
-  min-width: 1024px;
+  // min-width: 1024px;
   display: flex;
   height: 80px;
   justify-content: space-between;
@@ -94,8 +115,121 @@ $second : #907A7B;
 }
 .footer {
   height: 301px;
-  min-width: 1280px;
+  // min-width: 1280px;
   width: 100%;
   background-color: $second;
+  .h3_footer {
+    font-weight: medium;
+    font-size: 28px;
+    line-height: 42px;
+    font-family: Oswald;
+    color: white;
+  }
+}
+.carousel {
+  width: 100%;
+  min-height: 582px;
+  background-image: url("https://hexschool.github.io/webLayoutTraining1st/yoga-week8/photo-1612157777902-5382bc6e864b.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+.container-1 {
+  // min-width: 1042px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.service-content {
+  .title {
+    margin: 40px 0px 32px 0px;
+    text-align: center;
+    h3 {
+      font-size: 28px;
+      line-height: 42px;
+      color: #907A7B;
+    }
+    span {
+      font-size: 20px;
+      line-height: 30px;
+      color: #C0A4A5;
+    }
+  }
+  ul {
+    li {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: bottom;
+      min-height: 420px;
+      max-width: 350px;
+      margin: 0px 15px;
+      padding: 24px 20px;
+      border-radius: 16px;
+      div {
+        padding: 0px;
+        color: #ffffff;
+        h4 {
+          font-size: 20px;
+          line-height: 30px;
+        }
+        span {
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+    }
+    li:first-child{
+      
+      background-image: url("https://hexschool.github.io/webLayoutTraining1st/yoga-week8/photo-1593810450967-f9c42742e326.jpeg");
+    }
+    li:nth-child(2){
+      background-image: url("https://hexschool.github.io/webLayoutTraining1st/yoga-week8/photo-1593810451137-5dc55105dace.jpeg");
+    }
+    li:nth-child(3){
+      background-image: url("https://hexschool.github.io/webLayoutTraining1st/yoga-week8/photo-1599901860904-17e6ed7083a0.jpeg");
+    }
+  }
+}
+.teacher-content {
+  margin-top: 64px;
+  background-color: #F5F0E7;
+  height: 756px;
+  .row {
+    .start-img {
+      border-radius: 16px;
+      height: 628px;
+      background-image: url("https://hexschool.github.io/webLayoutTraining1st/yoga-week8/photo-1540206276207-3af25c08abc4.jpeg");
+      background-repeat: no-repeat;
+    }
+  }
+  .title {
 
+  }
+  .teacher-info {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 32px 24px;
+    .user-img {
+      img{
+        border-radius: 16px;
+      }
+
+    }
+    .user-info {
+
+    }
+  }
+  ul li {
+    margin: 8px 0px;
+  }
+}
+.title-style {
+  font-size: 28px;
+  line-height: 42px;
+  color: #907A7B;
+}
+.span-style {
+  font-size: 20px;
+  line-height: 30px;
+  color: #C0A4A5;
 }

@@ -20,6 +20,11 @@ let options = minimist(process.argv.slice(2), env);
 //現在開發狀態
 console.log(`Current mode：${options.env}`);
 
+
+gulp.task('icons', function() {
+  return gulp.src('node_modules/@fortawesome/fontawesome-free/webfonts/*')
+      .pipe(gulp.dest(dist+'/assets/webfonts/'));
+});
 /*
 const buildScss = async function () {
   await gulp.src('scss/!*.scss')
